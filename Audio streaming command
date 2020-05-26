@@ -1,0 +1,9 @@
+# enable microphone
+sudo modprobe snd_bcm2835
+
+#how to check your IP
+hostname -I
+
+# stream audio command
+arecord -D plughw:1,0 -f dat | ssh -C {Your RPI IP Address} aplay -f dat
+
