@@ -1,3 +1,9 @@
+# install VLC media player
+sudo apt-get install vlc
+
+# get IP address of RPI
+hostname -I
+
 # check to see if it works
 vcgencmd get_camera
 
